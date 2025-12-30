@@ -395,6 +395,7 @@ color: rgb(19, 19, 19);
 font-weight: bold;
 border-radius: 10px;
 background-color: rgb(227, 225, 230);
+border: #161616 thick;
 }
 #inp6{
 position: absolute;
@@ -405,14 +406,45 @@ color: rgb(19, 19, 19);
 font-weight: bold;
 border-radius: 10px;
 background-color: rgb(227, 225, 230);
+border: #161616 thick;
 }
 #inp7{
 position: absolute;
-left: 55%;
+left: 56%;
 top: 10%;
 padding: 10px;
 color: rgb(19, 19, 19);
 font-weight: bold;
 border-radius: 10px;
-background-color: rgb(227, 225, 230);
+background-color: rgb(227, 225, 230);   
+border: #161616 thick;
+}
+#inp5::placeholder, #inp6::placeholder, #inp7::placeholder{
+color: rgb(33, 33, 33);
+font-size: 20px
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#div_inp5_6{
+    background-color: rgba(225, 225, 225, 0.437);
+width: 460px;
+height: 100px;
+position: absolute;
+left: 24%;
+top: 6%;
+border-radius: 15px;
+pointer-events: none;
+}
+#div_inp7{
+    background-color: rgba(225, 225, 225, 0.437);
+width: 460px; /* עשיתי את זה ארוך כדי להוסיף בהמשך אינפוט של צבע */
+height: 100px;
+position: absolute;
+left: 55%;
+top: 6%;
+border-radius: 15px;
+pointer-events: none;
 }
