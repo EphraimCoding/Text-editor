@@ -355,11 +355,6 @@ top: 17.5%;
 border-radius: 10px;
 pointer-events: none;
 }
-#inp5{
-position: relative;
-left: 50%;
-transform: translateX(-50%);
-}
 .line_up{
     background-color: #5a5a5a;
 position: absolute;
@@ -390,4 +385,34 @@ margin-right: 1.8dvw;
 margin-top: 9dvh;
 color: white;
 cursor:pointer;
+}
+#inp5{
+position: absolute;
+left: 25%;
+top: 10%;
+padding: 10px;
+color: rgb(19, 19, 19);
+font-weight: bold;
+border-radius: 10px;
+background-color: rgb(227, 225, 230);
+}
+#inp6{
+position: absolute;
+left: 40%;
+top: 10%;
+padding: 10px;
+color: rgb(19, 19, 19);
+font-weight: bold;
+border-radius: 10px;
+background-color: rgb(227, 225, 230);
+}
+#inp7{
+position: absolute;
+left: 55%;
+top: 10%;
+padding: 10px;
+color: rgb(19, 19, 19);
+font-weight: bold;
+border-radius: 10px;
+background-color: rgb(227, 225, 230);
 }
