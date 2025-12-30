@@ -1,0 +1,30 @@
+body{
+   background-color: rgb(229, 229, 229); 
+   text-align: center;
+   font-size: 200%;
+   color: rgb(0, 0, 0);
+}
+.h1{
+    color: rgb(0, 136, 255);
+}
+#img_gitub{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+#img_facbok{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+        left: 55%;
+            top: 31.8%;
+    transform: translateX(-50%);
+}
+#back{
+    position: absolute;
+    left: 90%;
+    width: 120px;
+}
