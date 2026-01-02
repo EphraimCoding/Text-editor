@@ -5,13 +5,25 @@ const inp3 = document.getElementById("inp4")
 const he1 = document.getElementById("he1")
 const he2 = document.getElementById("he2")
 const he3 = document.getElementById("he3")
+const bts1 = document.getElementById("bts1")
+const bts2 = document.getElementById("bts2")
+const bts3 = document.getElementById("bts3")
+const bts4 = document.getElementById("bts4")
+const bts5 = document.getElementById("bts5")
+const text = document.getElementById("textarea")
+const btn = document.getElementById("btn1")
+const btn2 = document.getElementById("btn2")
+const det = document.getElementById("det")
+const det1 = document.getElementById("det1")
+const bos = document.getElementById("bos")
+const inp5 = document.getElementById("inp5")
+const inp6 = document.getElementById("inp6")
+const inp7 = document.getElementById("inp7")
+const inp8 = document.getElementById("inp8")
 he3.style.border = "4px solid black" ;
 inp.value = "#ffffff"
 inp2.value = "13.3"
 let m;
-const text = document.getElementById("textarea")
-const btn = document.getElementById("btn1")
-const btn2 = document.getElementById("btn2")
 
 addEventListener("input", function(){
         text.style.color = inp1.value
@@ -97,11 +109,6 @@ text.style.textAlign = "right"
 
 
 })
-const bts1 = document.getElementById("bts1")
-const bts2 = document.getElementById("bts2")
-const bts3 = document.getElementById("bts3")
-const bts4 = document.getElementById("bts4")
-const bts5 = document.getElementById("bts5")
 
 bts1.addEventListener("click", function(){
 text.style.fontFamily = "cursive"
@@ -164,18 +171,7 @@ bts4.style.border = "2px dashed"
 bts5.style.border = "2px dashed"
 
 })
-
-const det = document.getElementById("det")
-const det1 = document.getElementById("det1")
-
-const bos = document.getElementById("bos")
-
 text.style.fontFamily =   '"Rubik Wet Paint", system-ui';
-const inp5 = document.getElementById("inp5")
-const inp6 = document.getElementById("inp6")
-const inp7 = document.getElementById("inp7")
-
-
 
 inp5.addEventListener("input", function(){
 if( Number(inp5.value) > 1600){
@@ -201,5 +197,13 @@ if(det.open) det1.open = false;
 });
 det1.addEventListener('toggle', function(){
 if(det1.open) det.open = false;
+})
+inp7.addEventListener("input", function(){
+        if(inp7.value > 15) inp7.value = 15
+        else if(inp7.value < 0) inp7.value = 0
+text.style.border = `${inp7.value}px solid ${inp8.value}`
+})
+inp8.addEventListener("input", function(){
+text.style.borderColor = `${inp8.value}`
 })
 
