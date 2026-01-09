@@ -20,6 +20,7 @@ const inp5 = document.getElementById("inp5")
 const inp6 = document.getElementById("inp6")
 const inp7 = document.getElementById("inp7")
 const inp8 = document.getElementById("inp8")
+const rudios = document.getElementById("rudios")
 he3.style.border = "4px solid black" ;
 inp.value = "#ffffff"
 inp2.value = "13.3"
@@ -206,4 +207,6 @@ text.style.border = `${inp7.value}px solid ${inp8.value}`
 inp8.addEventListener("input", function(){
 text.style.borderColor = `${inp8.value}`
 })
-
+rudios.addEventListener("input", function(){
+text.style.borderRadius = `${rudios.value}px`        
+})

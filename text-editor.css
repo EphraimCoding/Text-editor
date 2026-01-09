@@ -459,3 +459,13 @@ pointer-events: none;
 left: 71%;
 top: 7.5%;
 }
+#rudios{
+    position: absolute;
+    left: 57%;
+    top: 16%;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance:none;
+     border-radius: 10px;
+     height: 7px;
+}
