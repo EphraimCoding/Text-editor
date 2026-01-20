@@ -46,6 +46,7 @@ if(text.style.textShadow === ""){
 else{
             text.style.textShadow = ""
             btn.style.background = "#bc5454"
+            m = false
 }
 
 
