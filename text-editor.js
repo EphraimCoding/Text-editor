@@ -51,19 +51,19 @@ else{
 
 })
 btnsw1.addEventListener("click", function(){
-if(m == true){
+if(m == true && btn.style.background !== "red"){
                     text.style.textShadow = `-0.3em -0.3em 0.2em ${inp3.value}`
 }
 
 })
 btnsw2.addEventListener("click", function(){
-if(m == true){
+if(m == true && btn.style.background !== "red"){
                     text.style.textShadow = `0em 0em 0.2em ${inp3.value}`
 }
 
 })
 btnsw3.addEventListener("click", function(){
-if(m == true){
+if(m == true && btn.style.background !== "red"){
                     text.style.textShadow = `0.3em 0.3em 0.2em ${inp3.value}`
 }
 
