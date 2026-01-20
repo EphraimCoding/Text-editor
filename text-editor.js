@@ -21,6 +21,9 @@ const inp6 = document.getElementById("inp6")
 const inp7 = document.getElementById("inp7")
 const inp8 = document.getElementById("inp8")
 const rudios = document.getElementById("rudios")
+const btnsw1 = document.getElementById("btnsw1")
+const btnsw2 = document.getElementById("btnsw2")
+const btnsw3 = document.getElementById("btnsw3")
 he3.style.border = "4px solid black" ;
 inp.value = "#ffffff"
 inp2.value = "13.3"
@@ -36,17 +39,36 @@ btn.addEventListener("click", function(){
 if(text.style.textShadow === ""){
             text.style.textShadow = `0.3em 0.3em 0.2em ${inp3.value}`
             btn.style.transition = "0.4s"
-            btn.style.background = "#88ff00ff"
+            btn.style.background = "rgb(177, 225, 122)"
              m = true
 
 }
 else{
             text.style.textShadow = ""
-            btn.style.background = "red"
+            btn.style.background = "#bc5454"
 }
 
 
 })
+btnsw1.addEventListener("click", function(){
+if(m == true){
+                    text.style.textShadow = `-0.3em -0.3em 0.2em ${inp3.value}`
+}
+
+})
+btnsw2.addEventListener("click", function(){
+if(m == true){
+                    text.style.textShadow = `0em 0em 0.2em ${inp3.value}`
+}
+
+})
+btnsw3.addEventListener("click", function(){
+if(m == true){
+                    text.style.textShadow = `0.3em 0.3em 0.2em ${inp3.value}`
+}
+
+})
+
 btn2.addEventListener("click", function(){
 if(text.style.fontWeight === ""){
             text.style.fontWeight = `bold`
