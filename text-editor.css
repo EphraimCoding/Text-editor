@@ -154,10 +154,10 @@ text-shadow: 0 0 5px black;
 }
 #inp1{
 position: absolute;
-left: 52%;
-top:2.5%;
-width:80px;
-height: 80px;
+left: 36%;
+top:8.5%;
+width:60px;
+height: 60px;
 background-color: rgba(130, 12, 12, 0); 
 border: none;
 background-color:       rgba(0, 0, 128, 0);
