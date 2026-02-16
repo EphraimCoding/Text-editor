@@ -24,70 +24,69 @@
         </div>
     </a>
     <div class="line_up"></div>
-    <details id="det">
-        <summary id="sum1">
-            <p class="p_sum">עיצוב טקסט</p>
-        </summary>
-        <div id="bos">
-            <div id="size">
-            </div>
-            <div id="textcolor"></div>
-            <div id="baccolor"></div>
-            <div id="ch"></div>
-            <div id="modgash"></div>
-            <div id="font_box"></div>
-            <div id="fonts_blox"></div>
-            <div id="civon_blox"></div>
-
-            <label for="num" id="labsize">גודל</label>
-            <input type="number" id="inp3" name="num">
-
-            <div class="contbtnssws">
-                <button id="btnsw1"></button>
-                <button id="btnsw2"></button>
-                <button id="btnsw3"></button>
-            </div>
-            <input type="color" id="inp2">
-            <input type="color" id="inp4">
-            <button id="btn1">צל</button>
-            <p id="p2">צבע טקסט</p>
-            <details id="det0">
-                <summary id="summary_fonts">פונטים</summary>
-                <div id="div_fonts">
-                    <button id="bts1" class="bts">font</button>
-                    <button id="bts2" class="bts">font</button>
-                    <button id="bts3" class="bts">font</button>
-                    <button id="bts4" class="bts">font</button>
-                    <button id="bts5" class="bts">font</button>
-                    <button id="bts6" class="bts">font</button>
+    <div id="container_sum">
+        <details id="det">
+            <summary class="sum">
+                <p class="p_sum">עיצוב טקסט</p>
+            </summary>
+            <div id="bos">
+                <div id="size">
                 </div>
+                <div id="textcolor"></div>
+                <div id="baccolor"></div>
+                <div id="ch"></div>
+                <div id="modgash"></div>
+                <div id="font_box"></div>
+                <div id="fonts_blox"></div>
+                <div id="civon_blox"></div>
 
-            </details>
-            <button id="he1">שמאל⬅️</button>
-            <button id="he2">אמצע↔️</button>
-            <button id="he3">ימין➡️</button>
-            <button id="btn2">מודגש</button>
+                <label for="num" id="labsize">גודל</label>
+                <input type="number" id="inp3" name="num">
 
-        </div>
+                <div class="contbtnssws">
+                    <button id="btnsw1"></button>
+                    <button id="btnsw2"></button>
+                    <button id="btnsw3"></button>
+                </div>
+                <input type="color" id="inp2">
+                <input type="color" id="inp4">
+                <button id="btn1">צל</button>
+                <p id="p2">צבע טקסט</p>
+                <details id="det0">
+                    <summary id="summary_fonts">פונטים</summary>
+                    <div id="div_fonts">
+                        <button id="bts1" class="bts">font</button>
+                        <button id="bts2" class="bts">font</button>
+                        <button id="bts3" class="bts">font</button>
+                        <button id="bts4" class="bts">font</button>
+                        <button id="bts5" class="bts">font</button>
+                        <button id="bts6" class="bts">font</button>
+                    </div>
 
-    </details>
+                </details>
+                <button id="he1">שמאל⬅️</button>
+                <button id="he2">אמצע↔️</button>
+                <button id="he3">ימין➡️</button>
+                <button id="btn2">מודגש</button>
 
-    <details id="det1">
-        <summary id="sum2">
-            <p class="p_sum">עיצוב תיבת טקסט</p>
-        </summary>
-        <div id="div_inp5_6"></div>
-        <div id="div_inp7"></div>
-        <input type="color" id="inp1">
-        <input type="number" id="inp5" name="inp5" placeholder="רוחב:" max="1600">
-        <input type="number" id="inp6" name="inp6" placeholder="גובה:" max="500">
-        <input type="number" id="inp7" name="inp7" placeholder="רוחב מסגרת" max="35">
-        <input type="color" id="inp8" value="#000000">
-        <input type="range" value="1" min="0" max="50" id="rudios">
-    </details>
-    <textarea id="textarea" dir="rtl"></textarea>
+            </div>
 
-    <script src="text-editor.js"></script>
+        </details>
+
+        <details id="det1">
+            <summary class="sum">
+                <p class="p_sum">עיצוב תיבת טקסט</p>
+            </summary>
+            <input type="color" id="inp1" class="item1">
+            <input type="number" id="inp5" name="inp5" placeholder="רוחב:" max="1600" class="item1">
+            <input type="number" id="inp6" name="inp6" placeholder="גובה:" max="500" class="item1">
+            <input type="number" id="inp7" name="inp7" placeholder="רוחב מסגרת" max="35" class="item1">
+            <input type="color" id="inp8" value="#000000" class="item1">
+            <input type="range" value="1" min="0" max="50" id="rudios" class="item1">
+        </details>
+        <textarea id="textarea" dir="rtl"></textarea>
+
+        <script src="text-editor.js"></script>
 </body>
 
 </html>

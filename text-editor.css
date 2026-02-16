@@ -1,89 +1,69 @@
-body{
-background: linear-gradient( 45deg, #161616, #242424 );
-background-size: 600%;
-background-position: 0%,50%;
-overflow: hidden;
-animation: aa 5s alternate infinite;
-transition: 0.3s;  
-}
-@keyframes aa{
-0%{background-position: 0% 50%;
-}
-100%{background-position: 100% 50%;
-}
-}
-html{
+    body{
+    background: linear-gradient( 45deg, #161616, #242424 );
+    background-size: 600%;
+    background-position: 0%,50%;
     overflow: hidden;
-transition: 0.3s;
+    animation: aa 5s alternate infinite;
+    transition: 0.3s;  
+    }
+    @keyframes aa{
+    0%{background-position: 0% 50%;
+    }
+    100%{background-position: 100% 50%;
+    }
+    }
+    html{
+        overflow: hidden;
+    transition: 0.3s;
 
-}
-#textarea{
-width: 90%;
-height: 64%;
-resize: none;
-position: absolute;
-border: 4px solid hsl(0, 0%, 15%);
-border-radius: 4px;
-top: 30%;
-background-color: rgb(244, 248, 252);
-transition: height 0.3s ease-in-out,
-            width 0.3s ease-in-out,
-            text-shadow 0.3s ease-in-out;
-}
+    }
+    #textarea{
+    width: 90vw;
+    height: 60vh;
+    resize: none;
+    position: absolute;
+    border: 4px solid hsl(0, 0%, 15%);
+    border-radius: 4px;
+    bottom: 0%;
+    background-color: rgb(244, 248, 252);
+    transition: height 0.3s ease-in-out,
+                width 0.3s ease-in-out,
+                text-shadow 0.3s ease-in-out;
+    }
 
-#sum1{
-position: fixed;
-display: grid;
-left: 12%;
-border: none;
-border-radius: 10px;
-color: white;
-background-color: hsl(213, 100%, 75%);
-padding: 1%;
-font-size: 120%;
-cursor: pointer;
-transition: 0.4s;
-}
 
-#sum1:hover .p_sum{
+    #container_sum{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 2%;
+    }
+    .sum{
+    padding: 1.5vw;
+    height: 3vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #161616;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.4s;
-transform: rotate(360deg);
-color: rgb(23, 23, 23);
-}
-#sum2:hover .p_sum{
-transition: 0.4s;
-transform: rotate(360deg);
-color: rgb(23, 23, 23);
-}
- #sum1::after, #sum2::after{
- content: "";
- z-index: -1;
- position: absolute;
- top: 0;
- left: 0;
- width: 10%;
- height: 100%;
-background-color: hsl(213, 100%, 75%);
- border-radius: 10px;
- transition: 0.4s ease-in-out;
-}
-#sum1:hover:after, #sum2:hover:after{
-width: 99%;
-background-color: rgb(233, 232, 232);
-
-}
-#sum2{
-position:fixed;
-display: grid;
-left: 1%;
-border: none;
-border-radius: 10px;
-color: white;
-background-color: hsl(213, 100%, 75%);
-padding: 1%;
-font-size: 120%;
-cursor: pointer;
-}
+    }
+    .sum:hover{
+        
+        background-color:hsl(0, 0%, 30%) ;
+        border: 1px solid #161616;
+    }
+    .p_sum{
+    font-size: clamp(10px, 2vw, 30px);
+    }
+    .sum:hover .p_sum{
+        transition: 0.4s;
+    transform: rotate(360deg);
+    color: #faeeee;
+    }
 #inp3{
 position: absolute;
 left: 80%;
@@ -154,6 +134,10 @@ text-shadow: 0 0 5px black;
 }
 #inp1{
 position: absolute;
+left: 52%;
+top:2.5%;
+width:80px;
+height: 80px;
 left: 36%;
 top:8.5%;
 width:60px;
@@ -478,7 +462,7 @@ top: 7.5%;
         height: 10px;
     transform: rotate(-20deg);
     cursor: pointer;
-    
+
 }
 #btnsw2{
     background-color: #161616;
@@ -490,5 +474,4 @@ top: 7.5%;
     background-color: #161616;
         height: 10px;
     transform: rotate(20deg);
-        cursor: pointer;
-}
+        cursor: pointer;}
