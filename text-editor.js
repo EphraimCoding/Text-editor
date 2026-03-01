@@ -24,6 +24,9 @@
         const btnsw1 = document.getElementById("btnsw1")
         const btnsw2 = document.getElementById("btnsw2")
         const btnsw3 = document.getElementById("btnsw3")
+        const sum_click = document.getElementById("clickSound_sum")
+        const sum = document.querySelectorAll(".sum")
+
         he3.style.border = "4px solid black" ;
         inp.value = "#ffffff"
         inp2.value = "13.3"
@@ -233,3 +236,9 @@
         rudios.addEventListener("input", function(){
         text.style.borderRadius = `${rudios.value}px`        
         })
+document.addEventListener("click", function(e) {
+    if (e.target.closest(".sum")) {
+        sum_click.currentTime = 0
+        sum_click.play()
+    }
+})
